@@ -1,0 +1,32 @@
+Source: telepathy-python
+Section: python
+Priority: optional
+X-Python-Version: >= 2.4
+Maintainer: Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>
+Uploaders: Dafydd Harries <daf@debian.org>,
+           Simon McVittie <smcv@debian.org>,
+           Sjoerd Simons <sjoerd@debian.org>,
+           Laurent Bigonville <bigon@debian.org>,
+           Jonny Lamb <jonny@debian.org>,
+           Emilio Pozuelo Monfort <pochu@debian.org>
+Build-Depends: cdbs (>= 0.4.90~),
+               python (>= 2.6.6-3~),
+               debhelper (>= 8)
+Build-Depends-Indep: python-dbus, xsltproc
+Standards-Version: 3.9.1
+Vcs-Git: git://git.debian.org/git/pkg-telepathy/telepathy-python.git
+Vcs-Browser: http://git.debian.org/?p=pkg-telepathy/telepathy-python.git
+Homepage: http://telepathy.freedesktop.org/wiki/Telepathy%20Python
+
+Package: python-telepathy
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-dbus
+Provides: ${python:Provides}
+Description: Python language bindings for telepathy
+ telepathy-python is a Python package containing base classes for use in
+ connection managers, and proxy classes for use in clients.
+ .
+ Telepathy is a D-Bus framework for unifying real time communication,
+ including instant messaging, voice calls and video calls. It abstracts
+ differences between protocols to provide a unified interface for
+ applications.

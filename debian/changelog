@@ -1,0 +1,310 @@
+telepathy-python (0.15.19-3) unstable; urgency=low
+
+  * First release for MeeGo 1.2 Harmattan.
+
+ -- Tomasz Pieniążek <t.pieniazek@gazeta.pl>  Sat, 19 Nov 2011 00:26:31 +0200
+
+telepathy-python (0.15.19-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild to add Python 2.7 support
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:43 +0200
+
+telepathy-python (0.15.19-2) unstable; urgency=low
+
+  * Use dh_python2 instead of python-central
+  * debian/rules:
+    - Drop simple-patchsys.mk call since we are using 3.0 (quilt) source format
+    - Remove DEB_PYTHON_SYSTEM variable
+    - Remove explicit call to dh_pycentral
+    - Include python-module.mk to call dh_python2
+    - Use DEB_COMPRESS_EXCLUDE_ALL instead of deprecated DEB_COMPRESS_EXCLUDE
+  * debian/control:
+    - Drop python-central Build-dependency
+    - Add python (>= 2.6.6-3~) Build-dependency
+    - Drop XB-Python-Version
+    - Drop telepathy-python C/R/P
+  * debian/compat: Bump debhelper compatibility to 8
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 31 Mar 2011 11:02:22 +0200
+
+telepathy-python (0.15.19-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add myself to Uploaders.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 07 Dec 2010 13:58:53 +0100
+
+telepathy-python (0.15.18-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.1
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 21 Nov 2010 19:49:38 +0100
+
+telepathy-python (0.15.17-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jonny Lamb <jonny@debian.org>  Fri, 12 Mar 2010 23:36:04 +0000
+
+telepathy-python (0.15.16-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jonny Lamb <jonny@debian.org>  Tue, 09 Mar 2010 23:11:51 +0000
+
+telepathy-python (0.15.15-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Removed useless python-all-dev build-dep.
+
+ -- Jonny Lamb <jonny@debian.org>  Sun, 24 Jan 2010 11:38:12 +0000
+
+telepathy-python (0.15.13-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 15 Dec 2009 19:23:09 +0100
+
+telepathy-python (0.15.12-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/rules: Include autotools.mk as upstream has switched from
+    setuptools to autotools (at last).
+  * debian/control: Move python-all-dev to Build-Depends-Indep.
+
+ -- Jonny Lamb <jonny@debian.org>  Tue, 06 Oct 2009 15:27:31 +0100
+
+telepathy-python (0.15.11-1) unstable; urgency=low
+
+  [ Jonny Lamb ]
+  * New upstream release.
+
+  [ Laurent Bigonville ]
+  * Fix Homepage URL
+
+ -- Jonny Lamb <jonny@debian.org>  Tue, 25 Aug 2009 19:49:28 +0100
+
+telepathy-python (0.15.10-2) unstable; urgency=low
+
+  * Upload to unstable
+  * Bump Standards-Version to 3.8.3 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 17 Aug 2009 13:46:13 +0200
+
+telepathy-python (0.15.10-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Jonny Lamb <jonny@debian.org>  Thu, 30 Jul 2009 15:53:27 +0200
+
+telepathy-python (0.15.9-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Jonny Lamb <jonny@debian.org>  Tue, 28 Jul 2009 16:09:37 +0200
+
+telepathy-python (0.15.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Change package priority to optional
+    - Bump Standards-Version to 3.8.1 (no further changes)
+    - Be more verbose in package extended description
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 16 Jun 2009 11:23:44 +0200
+
+telepathy-python (0.15.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Removed XS-Dm-Upload-Allowed.
+  * debian/gbp.conf: Removed no-create-orig field.
+
+ -- Jonny Lamb <jonny@debian.org>  Mon, 23 Feb 2009 11:15:10 +0000
+
+telepathy-python (0.15.6-2) unstable; urgency=low
+
+  * debian/control: Added myself to Uploaders.
+
+ -- Jonny Lamb <jonny@debian.org>  Mon, 16 Feb 2009 10:47:31 +0000
+
+telepathy-python (0.15.6-1) experimental; urgency=low
+
+  [ Simon McVittie ]
+  * Move packaging to git
+
+  [ Laurent Bigonville ]
+  * New upstream release
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 08 Jan 2009 13:44:43 +0100
+
+telepathy-python (0.15.3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 22 Oct 2008 18:21:14 +0200
+
+telepathy-python (0.15.2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 20 Oct 2008 15:28:30 +0200
+
+telepathy-python (0.15.1-1) experimental; urgency=low
+
+  [ Laurent Bigonville ]
+  * New upstream release
+  * debian/control:
+    - Bump Standards-Version to 3.8.0
+    - Correct capitalization of "Python"
+    - Use my debian.org address in Uploaders
+
+  [ Simon McVittie ]
+  * Use my debian.org address in Uploaders
+  * Wrap Uploaders, Build-Depends lines
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 23 Sep 2008 18:50:18 +0200
+
+telepathy-python (0.15.0-1) unstable; urgency=low
+
+  * New upstream version 0.15.0
+  * Don't mention Cohoba and telepathy-msn in description (-msn is now
+    -butterfly, and Cohoba is obsolete)
+  * Standards-Version: 3.7.3 (no changes)
+  * Add XS-Dm-Upload-Allowed: yes so I can upload it in future
+
+ -- Simon McVittie <smcv@ianadd.pseudorandom.co.uk>  Thu, 21 Feb 2008 10:42:31 +0000
+
+telepathy-python (0.14.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself as an Uploaders
+  * Add Vcs-Bzr field
+  * Add watch file
+  * Use new Homepage field instead of old pseudo-field
+
+ -- Laurent Bigonville <bigon@bigon.be>  Thu, 08 Nov 2007 04:43:28 +0100
+
+telepathy-python (0.13.13-1) unstable; urgency=low
+
+  * New upstream version fixes various upstream bugs - telepathy-butterfly
+    works with Empathy again
+  * Don't compress Python examples (call.py.gz -> call.py)
+  * Don't install examples into .../python-telepathy/examples/examples/ -
+    one examples directory is plenty
+
+ -- Simon McVittie <smcv@ianadd.pseudorandom.co.uk>  Mon, 02 Jul 2007 17:39:18 +0100
+
+telepathy-python (0.13.12-1) unstable; urgency=low
+
+  [ Simon McVittie ]
+  * New upstream release
+
+  [ Sjoerd Simons ]
+  * Don't compress the python example scripts
+  * Install examples in /u/s/d/python-telepathy/examples instead of
+    /u/s/d/python-telepathy/examples/examples/
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Mon, 04 Jun 2007 17:24:29 +0200
+
+telepathy-python (0.13.11-2) unstable; urgency=low
+
+  * Add examples to the package (Thanks Daniel Holbach)
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 18 May 2007 16:21:39 +0200
+
+telepathy-python (0.13.11-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 16 May 2007 10:30:05 +0200
+
+telepathy-python (0.13.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * Set Maintainer to the pkg-telepathy mailing list. Add Sjoerd as an
+    Uploader.
+
+ -- Simon McVittie <smcv@ianadd.pseudorandom.co.uk>  Tue, 15 May 2007 09:53:57 +0100
+
+telepathy-python (0.13.9-1) unstable; urgency=low
+
+  * New upstream release
+    - Build-Depends-Indep: xsltproc
+  * Merge Daf's unofficial Debian packaging with the Ubuntu packaging
+
+ -- Simon McVittie <smcv@ianadd.pseudorandom.co.uk>  Mon, 30 Apr 2007 15:37:11 +0100
+
+telepathy-python (0.13.7-0ubuntu2) feisty; urgency=low
+
+  * debian/rules:
+    - dropped dh_python call.
+  * debian/patches/01-remove-versioned-python-calls.patch:
+    - /usr/bin/python2.4 -> /usr/bin/env python
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Mon, 15 Jan 2007 13:25:06 +0100
+
+telepathy-python (0.13.7-0ubuntu1) feisty; urgency=low
+
+  * New upstream release.
+
+ -- Riccardo Setti <giskard@ubuntu.com>  Fri, 24 Nov 2006 19:23:15 +0100
+
+telepathy-python (0.13.3-0ubuntu3) feisty; urgency=low
+
+  * New upstream release. 
+
+ -- Riccardo Setti <giskard@ubuntu.com>  Fri, 24 Nov 2006 17:40:43 +0100
+
+telepathy-python (0.13.3-0ubuntu2) edgy; urgency=low
+
+  * Really dropped:
+    debian/patches/01-from-darcs_update-to-new-manager-format.patch
+
+ -- Riccardo Setti <giskard@ubuntu.com>  Sun, 15 Oct 2006 17:08:57 +0000
+
+telepathy-python (0.13.3-0ubuntu1) edgy; urgency=low
+
+  * New upstream release.
+  * Dropped debian/patches/01-from-darcs_update-to-new-manager-format.patch
+    as the bug is fixed in this release.
+
+ -- Riccardo Setti <giskard@ubuntu.com>  Tue, 10 Oct 2006 17:14:23 +0200
+
+telepathy-python (0.13.2-0ubuntu4) edgy; urgency=low
+
+  * debian/patches/01-from-darcs_update-to-new-manager-format.patch:
+    - change to new ew .manager format ignoring the [ConnectionManager]
+      stanza, and interpreting the filename for the bus path and bus name
+      arguments -- thanks Raphaël Slinckx for fixing and pointing to the fix
+      (Malone: #61945)
+  * debian/control:
+    - arch any -> all, changed python-all-dev to be in Build-Depends.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Tue, 26 Sep 2006 15:43:20 +0200
+
+telepathy-python (0.13.2-0ubuntu3) edgy; urgency=low
+
+  * Rebuild to add support for python2.5.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri,  8 Sep 2006 18:28:31 +0000
+
+telepathy-python (0.13.2-0ubuntu2) edgy; urgency=low
+
+  * debian/copyright:
+    - corrected two small issues, thanks Scott James Remnant for telling me.
+  * debian/control:
+    - changed Packaging, thanks Dafydd Harries <daf@debian.org> and 
+      Simon McVittie <simon.mcvittie@collabora.co.uk> for the heads-up.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 30 Aug 2006 08:54:21 +0200
+
+telepathy-python (0.13.2-0ubuntu1) edgy; urgency=low
+
+  * Initial release.
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Thu, 24 Aug 2006 14:32:44 +0200
+
