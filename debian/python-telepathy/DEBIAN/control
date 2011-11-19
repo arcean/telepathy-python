@@ -1,11 +1,13 @@
 Package: python-telepathy
 Source: telepathy-python
-Version: 0.15.19-3
+Version: 0.15.19-1maemo1+0m6
 Architecture: all
-Maintainer: Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>
-Installed-Size: 868
-Depends: python, python-support (>= 0.90.0), python-dbus
-Provides: python2.5-telepathy, python2.6-telepathy
+Maintainer: Bruno Araujo <bruno.araujo@indt.org.br>
+Installed-Size: 872
+Depends: python (>= 2.4), python-central (>= 0.6.11), python-dbus
+Conflicts: telepathy-python
+Replaces: telepathy-python
+Provides: python2.5-telepathy, python2.6-telepathy, telepathy-python
 Section: python
 Priority: optional
 Homepage: http://telepathy.freedesktop.org/wiki/Telepathy%20Python
@@ -18,3 +20,5 @@ Description: Python language bindings for telepathy
  differences between protocols to provide a unified interface for
  applications.
 Aegis-Manifest: empty
+Original-Maintainer: Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>
+Python-Version: >= 2.4

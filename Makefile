@@ -115,7 +115,7 @@ DEFS = -DPACKAGE_NAME=\"telepathy-python\" -DPACKAGE_TARNAME=\"telepathy-python\
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-INSTALL = /scratchbox/tools/bin/install -c
+INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}

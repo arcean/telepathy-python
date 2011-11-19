@@ -1,5 +1,9 @@
-# Automatically added by dh_pysupport
-if which update-python-modules >/dev/null 2>&1; then
-	update-python-modules  python-telepathy.public
+# Automatically added by dh_pycentral
+rm -f /var/lib/pycentral/python-telepathy.pkgremove
+if which pycentral >/dev/null 2>&1; then
+	pycentral pkginstall python-telepathy
+	if grep -qs '^python-telepathy$' /var/lib/pycentral/delayed-pkgs; then
+		sed -i '/^python-telepathy$/d' /var/lib/pycentral/delayed-pkgs
+	fi
 fi
 # End automatically added section

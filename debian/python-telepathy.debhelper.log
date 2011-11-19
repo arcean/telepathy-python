@@ -1,4 +1,3 @@
-dh_prep
 dh_installdirs
 dh_installdirs
 dh_installdocs
@@ -20,7 +19,7 @@ dh_lintian
 dh_install
 dh_link
 dh_installmime
-dh_pysupport
+dh_pycentral
 dh_strip
 dh_compress
 dh_fixperms

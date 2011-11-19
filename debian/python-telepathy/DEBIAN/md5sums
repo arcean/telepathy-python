@@ -1,10 +1,10 @@
 9c6a3bfef93b69e7b4215bee0db51423  usr/share/doc/python-telepathy/AUTHORS
 f607c1b92fb7dcc98ae52f5647ef691d  usr/share/doc/python-telepathy/NEWS.gz
 5b3e0cb7c4b0d268579faea2ab9cb3d4  usr/share/doc/python-telepathy/README
-fa55ba83f1bf4e7114ba7260086d2a25  usr/share/doc/python-telepathy/changelog.Debian.gz
+a3811e5f13d8287f4ed50475d405cd9f  usr/share/doc/python-telepathy/changelog.Debian.gz
 262b6866fc2cf62e08dc97685d1b65ca  usr/share/doc/python-telepathy/copyright
 a6593d9f0f73366283d6f19a88bcbd2b  usr/share/doc/python-telepathy/examples/Makefile.am
-c73be8507019ea08733dc3e74c16b582  usr/share/doc/python-telepathy/examples/Makefile.gz
+48e1293c4d31b772c43b482bb56219dd  usr/share/doc/python-telepathy/examples/Makefile.gz
 aa73032fde93b821aa775fdfac36ed34  usr/share/doc/python-telepathy/examples/Makefile.in.gz
 100cfb0ef7231513a617d989e86a2a3c  usr/share/doc/python-telepathy/examples/README
 c71f1d8100f6f87ce5b378291937566e  usr/share/doc/python-telepathy/examples/account.py
@@ -17,6 +17,7 @@ a558da7961023017491575e585729dbc  usr/share/doc/python-telepathy/examples/roomli
 9c5cb1473fa7ec8a4a4ca0329ce4a447  usr/share/doc/python-telepathy/examples/roster.py
 8e1f72ea86aee9b838b2c20223faa6cb  usr/share/doc/python-telepathy/examples/tube-dbus-muc.py
 2491b50debc7ed723b79e94f0401e0d2  usr/share/doc/python-telepathy/examples/tube-stream-muc.py
+a584154e0c82cf3f0bd271f3677347f2  usr/share/pyshared-data/python-telepathy
 77a4a558733a52e5a600eb62521148c8  usr/share/pyshared/telepathy/__init__.py
 aa8dc5cef386cdfe713c7a02893a1bd9  usr/share/pyshared/telepathy/_generated/Account.py
 50482fa5f46f1aca2a265da6de1ff81a  usr/share/pyshared/telepathy/_generated/Account_Interface_Avatar.py
@@ -112,4 +113,3 @@ b80b891015ab0a4993627416211ed4fb  usr/share/pyshared/telepathy/server/handle.py
 4f30612245056887739661dc42d4a86b  usr/share/pyshared/telepathy/server/properties.py
 6deca5c5f0183867f8764e1dc45d5d00  usr/share/pyshared/telepathy/server/protocol.py
 7b7b0d2e9f166dcdaa40858352d00ffc  usr/share/pyshared/telepathy/utils.py
-0738c16cd915b178eed837d8b0108a68  usr/share/python-support/python-telepathy.public

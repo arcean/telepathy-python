@@ -1,3 +1,4 @@
 S 15 com.nokia.maemo H 40 094b67ab9ea2dc1cfd90a1932a3b66d01c350f01 R 64 usr/share/doc/python-telepathy/examples/generate-manager-file.py
-S 15 com.nokia.maemo H 40 d9d00fe25276f68c78e5425f6a03c46637dac7f6 R 40 var/lib/dpkg/info/python-telepathy.prerm
-S 15 com.nokia.maemo H 40 c8ad4b8e870ae731f2ba1abf7aa5e15f5651b173 R 43 var/lib/dpkg/info/python-telepathy.postinst
+S 15 com.nokia.maemo H 40 74cdb99c1f76c2fe472e32f5ec69e94c5bde53ae R 40 var/lib/dpkg/info/python-telepathy.prerm
+S 15 com.nokia.maemo H 40 533ba0b283b3996bee379a9a1fb05d7aedd4bbd7 R 42 var/lib/dpkg/info/python-telepathy.preinst
+S 15 com.nokia.maemo H 40 2e3640c03cf4d90a8fd6ec861b2091fade4815b9 R 43 var/lib/dpkg/info/python-telepathy.postinst

@@ -1,13 +1,24 @@
 #!/usr/bin/make -f
 
+# workaround to avoid calling Scratchbox python2.3
+PATH := /usr/bin:$(PATH)
+export PATH
+SBOX_REDIRECT_IGNORE = /usr/bin/python
+export SBOX_REDIRECT_IGNORE
+
 DEB_AUTO_CLEANUP_RCS            := yes
-DEB_COMPRESS_EXCLUDE_ALL        := .py
-DEB_PYTHON_SYSTEM=pysupport
+DEB_PYTHON_SYSTEM               := pycentral
+DEB_COMPRESS_EXCLUDE            := .py
 
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/python-module.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+
+binary-install/python-telepathy::
+	dh_pycentral
 
 # List any files which are not installed
 include /usr/share/cdbs/1/rules/utils.mk
 common-binary-post-install-arch:: list-missing
+
+include $(CURDIR)/debian/update-patches.mk

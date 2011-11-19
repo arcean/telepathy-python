@@ -1,122 +1,30 @@
-telepathy-python (0.15.19-3) unstable; urgency=low
+telepathy-python (0.15.19-1maemo1+0m6) unstable; urgency=low
 
-  * First release for MeeGo 1.2 Harmattan.
+  * Update to 0.15.19.
 
- -- Tomasz Pieniążek <t.pieniazek@gazeta.pl>  Sat, 19 Nov 2011 00:26:31 +0200
+ -- Tomasz Pieniążek <t.pieniazek@gazeta.pl>  Sat, 19 Nov 2010 17:32:17 +0200
 
-telepathy-python (0.15.19-2.1) unstable; urgency=low
+telepathy-python (0.15.7-1maemo2+0m6) unstable; urgency=low
 
-  * Non-maintainer upload.
-  * Rebuild to add Python 2.7 support
+  * This entry has been added by BIFH queue processor
+    version has been changed to 0.15.7-1maemo2+0m6
 
- -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 May 2011 16:45:43 +0200
+ -- willer moreira <willer.moreira@indt.org.br>  Tue, 27 Jul 2010 00:33:32 +0300
 
-telepathy-python (0.15.19-2) unstable; urgency=low
+telepathy-python (0.15.7-1maemo2) unstable; urgency=low
 
-  * Use dh_python2 instead of python-central
-  * debian/rules:
-    - Drop simple-patchsys.mk call since we are using 3.0 (quilt) source format
-    - Remove DEB_PYTHON_SYSTEM variable
-    - Remove explicit call to dh_pycentral
-    - Include python-module.mk to call dh_python2
-    - Use DEB_COMPRESS_EXCLUDE_ALL instead of deprecated DEB_COMPRESS_EXCLUDE
-  * debian/control:
-    - Drop python-central Build-dependency
-    - Add python (>= 2.6.6-3~) Build-dependency
-    - Drop XB-Python-Version
-    - Drop telepathy-python C/R/P
-  * debian/compat: Bump debhelper compatibility to 8
+  * Bump version
+  * Fixes: NB#179171 -  telepathy-nokiamessaging-tests depends on python-telepathy
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 31 Mar 2011 11:02:22 +0200
+ -- Willer Moreira <willer.moreira@indt.org.br>  Mon, 26 Jul 2010 15:20:54 -0400
 
-telepathy-python (0.15.19-1) experimental; urgency=low
+telepathy-python (0.15.7-1maemo1) unstable; urgency=low
 
-  * New upstream release.
-  * Add myself to Uploaders.
-
- -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 07 Dec 2010 13:58:53 +0100
-
-telepathy-python (0.15.18-1) experimental; urgency=low
-
-  * New upstream release.
-  * Bump Standards-Version to 3.9.1
-  * Switch to dpkg-source 3.0 (quilt) format
-
- -- Laurent Bigonville <bigon@debian.org>  Sun, 21 Nov 2010 19:49:38 +0100
-
-telepathy-python (0.15.17-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Jonny Lamb <jonny@debian.org>  Fri, 12 Mar 2010 23:36:04 +0000
-
-telepathy-python (0.15.16-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Jonny Lamb <jonny@debian.org>  Tue, 09 Mar 2010 23:11:51 +0000
-
-telepathy-python (0.15.15-1) unstable; urgency=low
-
-  * New upstream release.
-  * debian/control: Removed useless python-all-dev build-dep.
-
- -- Jonny Lamb <jonny@debian.org>  Sun, 24 Jan 2010 11:38:12 +0000
-
-telepathy-python (0.15.13-1) unstable; urgency=low
-
-  * New upstream release.
-
- -- Laurent Bigonville <bigon@debian.org>  Tue, 15 Dec 2009 19:23:09 +0100
-
-telepathy-python (0.15.12-1) unstable; urgency=low
-
-  * New upstream release.
-  * debian/rules: Include autotools.mk as upstream has switched from
-    setuptools to autotools (at last).
-  * debian/control: Move python-all-dev to Build-Depends-Indep.
-
- -- Jonny Lamb <jonny@debian.org>  Tue, 06 Oct 2009 15:27:31 +0100
-
-telepathy-python (0.15.11-1) unstable; urgency=low
-
-  [ Jonny Lamb ]
-  * New upstream release.
-
-  [ Laurent Bigonville ]
-  * Fix Homepage URL
-
- -- Jonny Lamb <jonny@debian.org>  Tue, 25 Aug 2009 19:49:28 +0100
-
-telepathy-python (0.15.10-2) unstable; urgency=low
-
-  * Upload to unstable
-  * Bump Standards-Version to 3.8.3 (no further changes)
-
- -- Laurent Bigonville <bigon@debian.org>  Mon, 17 Aug 2009 13:46:13 +0200
-
-telepathy-python (0.15.10-1) experimental; urgency=low
-
-  * New upstream release.
-
- -- Jonny Lamb <jonny@debian.org>  Thu, 30 Jul 2009 15:53:27 +0200
-
-telepathy-python (0.15.9-1) experimental; urgency=low
-
-  * New upstream release.
-
- -- Jonny Lamb <jonny@debian.org>  Tue, 28 Jul 2009 16:09:37 +0200
-
-telepathy-python (0.15.8-1) unstable; urgency=low
-
-  * New upstream release.
-  * debian/control:
-    - Change package priority to optional
-    - Bump Standards-Version to 3.8.1 (no further changes)
-    - Be more verbose in package extended description
-
- -- Laurent Bigonville <bigon@debian.org>  Tue, 16 Jun 2009 11:23:44 +0200
-
+  * Merged for maemo.
+  * Explicitly build only for python2.5
+  
+ -- Pekka Pessi <Pekka.Pessi@nokia.com>  Tue, 02 Jun 2009 14:56:54 +0300
+  
 telepathy-python (0.15.7-1) unstable; urgency=low
 
   * New upstream release.
